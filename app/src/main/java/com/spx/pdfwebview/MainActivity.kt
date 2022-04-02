@@ -1,4 +1,4 @@
-package com.spx.pdflibrary
+package com.spx.pdfwebview
 
 import android.app.Activity
 import android.os.Build

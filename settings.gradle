@@ -1,0 +1,3 @@
+include ':pdflibrary'
+include ':app'
+rootProject.name = "PDFWebview"
