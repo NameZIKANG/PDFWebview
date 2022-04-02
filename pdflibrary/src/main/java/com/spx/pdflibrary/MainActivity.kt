@@ -1,14 +1,12 @@
 package com.spx.pdflibrary
 
-import android.app.Activity
-import android.os.Build
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
-import android.webkit.WebSettings
 import android.webkit.WebView
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.spx.pdfwebview.R
 
 class MainActivity : AppCompatActivity() {
 
