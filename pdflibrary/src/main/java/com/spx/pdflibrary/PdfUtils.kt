@@ -1,6 +1,5 @@
 package com.spx.pdflibrary
 
-import android.app.Activity
 import android.os.Build
 import android.view.KeyEvent
 import android.view.View
