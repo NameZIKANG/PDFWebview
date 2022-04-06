@@ -13,9 +13,6 @@ class PdfUtils {
         webView.settings.allowUniversalAccessFromFileURLs = true
         webView.isHorizontalScrollBarEnabled = false //水平不显示滚动条
         webView.isVerticalScrollBarEnabled = true //垂直不显示滚动条
-        // 设置webview的User-Agent
-//        ToastUtils.show(ws.getUserAgentString());
-//        Log.i("11111111111111111", ws.getUserAgentString());
         // 网页内容的宽度是否可大于WebView控件的宽度
         ws.pluginState = WebSettings.PluginState.ON
         ws.loadWithOverviewMode = true
