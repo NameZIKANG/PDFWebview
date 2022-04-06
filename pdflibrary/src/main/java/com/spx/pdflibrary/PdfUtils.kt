@@ -9,6 +9,7 @@ import android.webkit.WebView
 class PdfUtils {
 
     fun initWeb( webView: WebView, mUrl: String) {
+
         val ws = webView.settings
         webView.settings.allowUniversalAccessFromFileURLs = true
         webView.isHorizontalScrollBarEnabled = false //水平不显示滚动条

@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             FrameLayout.LayoutParams.MATCH_PARENT,
             FrameLayout.LayoutParams.MATCH_PARENT
         )
+
         mWebView = WebView(applicationContext)
         webViewContainer.addView(mWebView, params)
 
