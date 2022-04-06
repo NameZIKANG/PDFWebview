@@ -48,7 +48,7 @@ class PdfUtils {
 
         webView!!.setOnKeyListener(OnKeyEvent)
         webView.loadUrl("file:///android_asset/pdf.html?$mUrl")
-        
+
     }
 
     private val OnKeyEvent = View.OnKeyListener { v, keyCode, event ->
