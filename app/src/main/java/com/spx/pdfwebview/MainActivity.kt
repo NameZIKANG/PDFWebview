@@ -8,14 +8,13 @@ import com.spx.pdflibrary.initWeb
 
 class MainActivity : AppCompatActivity() {
 
-    private var mWebView: WebView? = null
+    private lateinit var mWebView: WebView  // 使用lateinit修饰后，访问一个还没有初始化的变量或属性将会导致UninitializedPropertyAccessException异常。
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar!!.hide()  //隐藏ActionBar
         initWebView("http://47.99.136.221:9000/gse-minio/b5a591c5c0504ff0a0b1af1b2a7b2516.pdf")
-
     }
 
     // 初始化对象
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         webViewContainer.addView(mWebView, params)
 
         initWeb(
-            mWebView!!,
+            mWebView,
             url
         )
     }
@@ -54,6 +53,6 @@ class MainActivity : AppCompatActivity() {
         mWebView?.setWebChromeClient(null)
         mWebView?.removeAllViews()
         mWebView?.destroy()
-        mWebView = null
+//        mWebView = null
     }
 }
